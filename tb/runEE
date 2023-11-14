@@ -1,1 +1,3 @@
-
+xrun -clean -rnm_tech -input probes.tcl -nowarn NSVCER -nowarn SAWSTP \
+ -linedebug -status -gui  -timescale 1ns/1ps -access rw  -top tb \
+ -y ../sv  +libext+.sv  tb.sv  $* &
